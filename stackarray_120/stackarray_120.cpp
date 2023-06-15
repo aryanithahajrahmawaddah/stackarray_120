@@ -17,4 +17,11 @@ public:
 		string element;
 		getline(cin, element);
 
+		if (top == 4) {			//step 1
+			cout << "Number of data exceds the limit." << endl;
+			return;
+		}
+
+		top++;		//step 2
+
 		
