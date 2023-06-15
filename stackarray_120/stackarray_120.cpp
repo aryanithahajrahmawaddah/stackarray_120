@@ -20,19 +20,18 @@ public:
 		if (top == 4) {			//step 1
 			cout << "Number of data exceds the limit." << endl;
 			return;
-		}
-
+		} 
 		top++;		//step 2
 
 		stack_array[top] = element;		//step 3
 		cout << endl;
 		cout << element << "ditambahkan(pushed)" << endl;
-
 	}
-	void pop() {		
+
+	void pop() {
 		if (empty()) {		//step 1
 			cout << "\nStack is empty  cannot pop." << endl;//1.a
-			return;		//1.b
+			return;			//1.b
 		}
 
 		cout << "\nThe popped element is: " << stack_array[top] << endl;		//step 2
@@ -44,7 +43,16 @@ public:
 		return (top == -1);
 	}
 
-	
+	void display() {
+		if (empty()) {
+			cout << "\nStack is empty." << endl;
+		}
+		else {
+			for (int tmp = 0; tmp <= top; tmp++) {
+				cout << stack_array[tmp] << endl;
+			}
+		}
+	}
 
-	
-		
+};
+
