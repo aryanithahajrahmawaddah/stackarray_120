@@ -12,4 +12,9 @@ public:
 		top = -1;
 	}
 
-	
+	void push() {
+		cout << "\nEnter a element: ";
+		string element;
+		getline(cin, element);
+
+		
